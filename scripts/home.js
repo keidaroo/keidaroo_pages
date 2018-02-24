@@ -1,7 +1,17 @@
-var box = $(".logoNameAnimation");
+var logoName = $(".logoName");
+var logoSub = $(".logoSub");
+$(function() {
+  logoSub.hide();
+})
 $(document).ready(function() {
-  box.animate({
-    width: 500,
-    height: 500
-  }, "slow", "easeOutQuart");
+  setTimeout(function() {
+    logoName.animate({
+      right: 300
+    }, 3000, "easeOutQuart");
+
+  }, 700);
+
+  setTimeout(function() {
+    logoSub.fadeIn(700);
+  }, 2000);
 });
