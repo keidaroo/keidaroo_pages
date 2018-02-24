@@ -5,3 +5,4 @@ $(document).ready(function() {
     height: 500
   }, "slow", "easeOutQuart");
 });
+alert("うへへへへ")
