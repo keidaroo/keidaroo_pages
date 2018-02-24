@@ -4,5 +4,5 @@ $(document).ready(function() {
     width: 500,
     height: 500
   }, "slow", "easeOutQuart");
+  alert("うへへへへ")
 });
-alert("うへへへへ")
