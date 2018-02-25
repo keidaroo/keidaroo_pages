@@ -6,7 +6,7 @@ $(function() {
 $(document).ready(function() {
   setTimeout(function() {
     logoName.animate({
-      right: "60vw"
+      right: "54vw"
     }, 3000, "easeOutQuart");
 
   }, 1500);
@@ -15,9 +15,11 @@ $(document).ready(function() {
     var logoNameStretch = parseInt(logoName.css('font-stretch'));
     var logoNameWidth = parseInt(logoName.css('width'));
     var logoNameAbove = (logoNameWidth - logoNameStretch) / 2;
-    console.log(logoNameWidth);
-    console.log(logoNameWidth - logoNameAbove);
     logoSub.css('left', logoNameWidth);
     logoSub.fadeIn(700);
   }, 3000);
 });
+$(window).resize(function() {
+  logoName.css('right', '54vw');
+  logoSub.css('left', logoName.css('width'));
+})
