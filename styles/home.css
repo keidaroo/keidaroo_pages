@@ -12,6 +12,8 @@
   left: 0;
   display: inline-block;
   float: right;
+  overflow: auto;
+  resize: both;
 }
 
 .logoSub {
@@ -26,4 +28,6 @@
   margin: auto;
   display: inline-block;
   height: 40%;
+  overflow: auto;
+  resize: both;
 }

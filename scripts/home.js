@@ -9,7 +9,7 @@ $(document).ready(function() {
       right: "60vw"
     }, 3000, "easeOutQuart");
 
-  }, 700);
+  }, 1500);
   setTimeout(function() {
     var logoNameLeft = parseInt(logoName.css('left'));
     var logoNameStretch = parseInt(logoName.css('font-stretch'));
