@@ -1,26 +1,28 @@
 .logoName {
   font-family: 'Quicksand', sans-serif;
   font-size: 5vw;
-  text-align: center;
+  font-stretch: normal;
   position: absolute;
+  text-align: right;
   top: 0;
-  right: 0;
+  right: 40vw;
   bottom: 0;
   margin: auto;
   height: 40%;
   left: 0;
   display: inline-block;
+  float: right;
 }
 
 .logoSub {
   font-family: 'Quicksand', sans-serif;
   font-size: 5vw;
-  text-align: center;
+  font-stretch: normal;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 20;
+  left: 0;
   margin: auto;
   display: inline-block;
   height: 40%;
