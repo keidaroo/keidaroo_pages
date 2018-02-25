@@ -6,9 +6,43 @@ body {
   background: linear-gradient(135deg, #ffffff, #ffffff);
 }
 
-.logoName {
-  font-family: 'Quicksand', sans-serif;
+.profileTextTitle {
+  font-family: 'Crafty Girls', cursive;
   font-size: 7vw;
+  font-stretch: normal;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 40vh;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: auto;
+  resize: both;
+}
+
+.profileText {
+  font-family: 'Crafty Girls', cursive;
+  font-size: 5vw;
+  font-stretch: normal;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 60vh;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: auto;
+  resize: both;
+}
+
+.logoName {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 10vw;
   font-stretch: normal;
   position: absolute;
   text-align: right;
@@ -25,8 +59,8 @@ body {
 }
 
 .logoSub {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 7vw;
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 10vw;
   font-stretch: normal;
   position: absolute;
   white-space: nowrap;

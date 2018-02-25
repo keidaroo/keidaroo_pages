@@ -1,7 +1,11 @@
 var logoName = $(".logoName");
 var logoSub = $(".logoSub");
+var profileTextTitle = $(".profileTextTitle");
+var profileText = $(".profileText");
 $(function() {
   logoSub.hide();
+  profileText.hide();
+  profileTextTitle.hide();
 })
 
 $(document).ready(function() {
@@ -20,24 +24,32 @@ $(document).ready(function() {
     var logoNameWidth = parseInt(logoName.css('width'));
     var logoNameAbove = (logoNameWidth - logoNameStretch) / 2;
     logoSub.css('left', logoNameWidth);
-    /*var granimInstance = new Granim({
-      element: '#home-wallpaper',
-      name: 'basic-gradient',
-      direction: 'diagonal',
-      opacity: [1, 1],
-      states: {
-        "default-state": {
-          gradients: [
-            ['#ffffff', '#ffffff'],
-            ['#36e4e4', '#9d15bf']
-          ],
-          loop: false,
-          transitionSpeed: 700
-        }
-      }
-    });*/
+
     logoSub.fadeIn(700);
   }, 3000);
+  setTimeout(function() {
+    var animateTop = parseInt(logoName.css('top')) * 0.6;
+    logoName.animate({
+      top: animateTop
+    }, {
+      duration: 500,
+      easing: 'easeOutQuart',
+      queue: false
+    });
+    logoSub.animate({
+      top: animateTop
+    }, {
+      duration: 500,
+      easing: 'easeOutQuart',
+      queue: false
+    })
+  }, 4300);
+  setTimeout(function() {
+    profileTextTitle.fadeIn(700);
+  }, 4900);
+  setTimeout(function() {
+    profileText.fadeIn(700);
+  }, 5700);
 });
 $(window).resize(function() {
   var logoNameStretch = parseInt(logoName.css('font-stretch'));
