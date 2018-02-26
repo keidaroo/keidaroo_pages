@@ -71,6 +71,7 @@ body {
 
 #home-wallpaper {
   /*background: linear-gradient(45deg, #6b00cb 0%, #ff99cc 100%);*/
+  /*background-image: url("../pictures/homeBackground.jpg");*/
   position: absolute;
   display: block;
   width: 100%;
