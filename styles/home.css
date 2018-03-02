@@ -7,24 +7,7 @@ body {
 }
 
 .profileTextTitle {
-  font-family: 'Crafty Girls', cursive;
-  font-size: 7vw;
-  font-stretch: normal;
-  position: absolute;
-  text-align: center;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 40vh;
-  height: auto;
-  display: inline-block;
-  margin: 0 auto;
-  overflow: auto;
-  resize: both;
-}
-
-.profileText {
-  font-family: 'Crafty Girls', cursive;
+  font-family: 'Ubuntu Mono', cursive;
   font-size: 5vw;
   font-stretch: normal;
   position: absolute;
@@ -32,12 +15,25 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  top: 60vh;
-  height: auto;
+  top: 40vh;
   display: inline-block;
   margin: 0 auto;
   overflow: auto;
-  resize: both;
+}
+
+.profileText {
+  font-family: 'Ubuntu Mono', cursive;
+  font-size: 4vw;
+  font-stretch: normal;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 60vh;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: auto;
 }
 
 .logoName {
@@ -55,7 +51,6 @@ body {
   margin: 0 auto;
   float: right;
   overflow: auto;
-  resize: both;
 }
 
 .logoSub {
@@ -72,11 +67,11 @@ body {
   display: inline-block;
   height: auto;
   overflow: auto;
-  resize: both;
 }
 
 #home-wallpaper {
-  background: linear-gradient(45deg, #6b00cb 0%, #ff99cc 100%);
+  /*background: linear-gradient(45deg, #6b00cb 0%, #ff99cc 100%);*/
+  /*background-image: url("../pictures/homeBackground.jpg");*/
   position: absolute;
   display: block;
   width: 100%;

@@ -3,6 +3,12 @@ var logoSub = $(".logoSub");
 var profileTextTitle = $(".profileTextTitle");
 var profileText = $(".profileText");
 $(function() {
+  var windowHeight = parseInt($(window).height());
+  var windowWidth = parseInt($(window).width());
+  logoName.css('font-size', Math.min(0.09 * windowWidth, 0.12 * windowHeight));
+  logoSub.css('font-size', Math.min(0.09 * windowWidth, 0.12 * windowHeight));
+  profileTextTitle.css('font-size', Math.min(0.06 * windowWidth, 0.1 * windowHeight));
+  profileText.css('font-size', Math.min(0.04 * windowWidth, 0.07 * windowHeight));
   logoSub.hide();
   profileText.hide();
   profileTextTitle.hide();
@@ -14,7 +20,7 @@ $(document).ready(function() {
     var logoSubStretch = parseInt($(window).width()) / 4.6;
     var above = parseInt($(window).width()) - logoSubStretch - logoNameStretch;
     logoName.animate({
-      right: above / 2 + logoSubStretch
+      right: $(window).width() / 2
     }, 3000, "easeOutQuart");
 
   }, 1500);
@@ -28,18 +34,18 @@ $(document).ready(function() {
     logoSub.fadeIn(700);
   }, 3000);
   setTimeout(function() {
-    var animateTop = parseInt(logoName.css('top')) * 0.6;
+    var animateTop = parseInt(logoName.css('top')) * 0.3;
     logoName.animate({
       top: animateTop
     }, {
-      duration: 500,
+      duration: 700,
       easing: 'easeOutQuart',
       queue: false
     });
     logoSub.animate({
       top: animateTop
     }, {
-      duration: 500,
+      duration: 700,
       easing: 'easeOutQuart',
       queue: false
     })
@@ -52,9 +58,6 @@ $(document).ready(function() {
   }, 5700);
 });
 $(window).resize(function() {
-  var logoNameStretch = parseInt(logoName.css('font-stretch'));
-  var logoSubStretch = parseInt($(window).width()) / 4.6;
-  var above = parseInt($(window).width()) - logoSubStretch - logoNameStretch;
-  logoName.css('right', above / 2 + logoSubStretch);
+  logoName.css('right', $(window).width() / 2);
   logoSub.css('left', logoName.css('width'));
 })
