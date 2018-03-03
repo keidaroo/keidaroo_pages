@@ -26,6 +26,24 @@ $(function() {
   sizeReset();
 
   logoName.hide();
+
+  var granimInstance = new Granim({
+    element: '#rocketCanvas',
+    name: 'basic-gradient',
+    direction: 'left-right', // 'diagonal', 'top-bottom', 'radial'
+    opacity: [1, 1],
+    isPausedWhenNotInView: true,
+    states: {
+      "default-state": {
+        gradients: [
+          ['#16d4b7', '#16d4b7'],
+          ['#6902b0', '#6902b0'],
+          ['#ff22f6', '#ff22f6']
+        ],
+        transitionSpeed: 2000
+      }
+    }
+  });
 })
 
 $(document).ready(function() {
@@ -34,19 +52,3 @@ $(document).ready(function() {
 $(window).resize(function() {
   sizeReset();
 })
-var granimInstance = new Granim({
-  element: '#rocketCanvas',
-  name: 'basic-gradient',
-  direction: 'left-right', // 'diagonal', 'top-bottom', 'radial'
-  opacity: [1, 1],
-  isPausedWhenNotInView: true,
-  states: {
-    "default-state": {
-      gradients: [
-        ['#16d4b7', '#16d4b7'],
-        ['#b00294', '#b00294'],
-        ['#ffc822', '#ffc822']
-      ]
-    }
-  }
-});
