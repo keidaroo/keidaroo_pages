@@ -6,7 +6,7 @@ body {
 }
 
 .logoName {
-  font-family: 'Ubuntu Mono', cursive;
+  font-family: 'Ubuntu Mono', monospace;
   font-size: 10vw;
   font-stretch: normal;
   position: absolute;
