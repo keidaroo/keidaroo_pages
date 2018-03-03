@@ -33,14 +33,10 @@ body {
 }
 
 .rocketImage {
-  /*background-image: url("../pictures/png/rocket.png");
-  */
+  background-image: url("../pictures/png/rocket.png");
   position: absolute;
   z-index: 2;
   display: block;
-  left: 10vw;
-  right: 30vw;
+  left: 60vw;
   top: 30vh;
-  height: 1000px;
-  width: 1000px;
 }
