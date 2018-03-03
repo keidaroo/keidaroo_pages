@@ -22,7 +22,7 @@ body {
 }
 
 #home-wallpaper {
-  background: linear-gradient(180deg, #6405b9 0%, #3e2252 100%);
+  background-color: #362852;
   /*background-image: url("../pictures/homeBackground.jpg");*/
   position: absolute;
   display: block;
@@ -38,19 +38,4 @@ body {
   display: block;
   right: 10vw;
   top: 30vh;
-}
-
-#rocketCanvas {
-  display: block;
-  z-index: 3;
-  top: 33%;
-  left: 15%;
-  right: 0;
-  bottom: 0;
-  width: 15%;
-  height: 15%;
-  border-radius: 50%;
-  background-color: #eb83d3;
-  position: absolute;
-  margin: 0 auto;
 }
