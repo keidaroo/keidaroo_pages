@@ -13,8 +13,7 @@ body {
   text-align: left;
   right: 0;
   left: 5vw;
-  bottom: 0;
-  top: 60vh;
+  bottom: 10vh;
   height: auto;
   display: inline-block;
   overflow: auto;
@@ -37,6 +36,21 @@ body {
   position: absolute;
   z-index: 2;
   display: block;
-  left: 60vw;
+  right: 10vw;
   top: 30vh;
+}
+
+#rocketCanvas {
+  display: block;
+  z-index: 3;
+  top: 33%;
+  left: 15%;
+  right: 0;
+  bottom: 0;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  background-color: #eb83d3;
+  position: absolute;
+  margin: 0 auto;
 }
