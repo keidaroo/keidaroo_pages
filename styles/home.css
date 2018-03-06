@@ -22,7 +22,7 @@ body {
 }
 
 #home-wallpaper {
-  background-color: #362852;
+  background-color: #333039;
   /*background-image: url("../pictures/homeBackground.jpg");*/
   position: absolute;
   display: block;
@@ -31,11 +31,16 @@ body {
   z-index: 0;
 }
 
+.scene {
+  top: 0;
+  left: 0;
+}
+
 .rocketImage {
-  background-image: url("../pictures/png/rocket.png");
+  background-image: url("../pictures/png/rocketBlue.png");
   position: absolute;
   z-index: 2;
-  display: block;
+  display: inline;
   right: 10vw;
-  top: 30vh;
+  top: 100vh;
 }
