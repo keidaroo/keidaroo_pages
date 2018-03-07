@@ -52,5 +52,5 @@ body {
   width: 100px;
   height: 100px;
   z-index: 3;
-  background-image: url("../pictures/png/rectangle.png");
+  background-image: url("pictures/png/rectangle.png");
 }
