@@ -32,15 +32,25 @@ body {
 }
 
 .scene {
+  position: relative;
   top: 0;
   left: 0;
 }
 
 .rocketImage {
-  background-image: url("../pictures/png/rocketBlue.png");
   position: absolute;
+  text-align: center;
   z-index: 2;
-  display: inline;
-  right: 10vw;
-  top: 100vh;
+  display: block;
+  left: 60vw;
+  top: 30vh;
+}
+
+.rocketSmoke {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+  background-image: url("../pictures/png/rectangle.png");
 }

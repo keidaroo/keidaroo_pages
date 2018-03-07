@@ -2,10 +2,12 @@ var logoName = $(".logoName");
 var wallpaper = $("#home-wallpaper");
 var rocketImage = $(".rocketImage");
 var sceneObj = $(".scene");
+var rocketSmoke = $(".rocketSmoke");
 var windowHeight = 0;
 var windowWidth = 0;
 var scene = $(".scene").get(0);
 var parallaxInstance = new Parallax(scene);
+var rocketSize = 0;
 
 function sizeReset() {
 
@@ -17,17 +19,31 @@ function sizeReset() {
   wallpaper.css('width', windowWidth);
   wallpaper.css('height', windowHeight);
 
-
   sceneObj.css('width', windowWidth);
   sceneObj.css('height', windowHeight);
 
-
-  var rocketMulti = 0.4;
-  var rocketSize = Math.min(rocketMulti * windowWidth, rocketMulti * windowHeight);
+  var rocketMultiX = 0.35,
+    rocketMultiY = 0.4;
+  rocketSize = Math.min(rocketMultiX * windowWidth, rocketMultiY * windowHeight);
   rocketImage.css('background-size', rocketSize);
   rocketImage.css('height', rocketSize);
   rocketImage.css('width', rocketSize);
 
+  rocketSmoke.css('right', rocketSize);
+  rocketSmoke.css('top', rocketSize);
+
+  //setTimeout('rect()');
+}
+
+function rect() {
+  rocketSmoke.animate({
+    top: windowHeight,
+    right: '10vw'
+  }, 3000).animate({
+    top: rocketSize,
+    right: rocketSize
+  }, 0)
+  setTimeout("rect()", 3000);
 }
 
 $(function() {
