@@ -31,7 +31,9 @@ function sizeReset() {
 
   rocketSmoke.css('right', rocketSize);
   rocketSmoke.css('top', rocketSize);
-
+  rocketSmoke.css('background-size', rocketSize * 0.1);
+  rocketSmoke.css('width', rocketSize * 0.1);
+  rocketSmoke.css('height', rocketSize * 0.1);
   //setTimeout('rect()');
 }
 
@@ -54,9 +56,8 @@ $(function() {
   var ran = Math.floor(Math.random() * (max + 1 - min)) + min;
   var rocketName = ['rocketBlue', 'rocketRed', 'rocketGreen', 'rocketYellow'];
   var backgroundUrl = 'url("pictures/png/' + rocketName[ran] + '.png ")';
-  console.log(backgroundUrl);
   rocketImage.css('background-image', backgroundUrl);
-
+  rocketSmoke.css('background-image', ' url("pictures/png/rectangle.png")');
   logoName.hide();
 })
 
