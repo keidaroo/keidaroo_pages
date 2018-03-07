@@ -19,8 +19,8 @@ function sizeReset() {
   wallpaper.css('width', windowWidth);
   wallpaper.css('height', windowHeight);
 
-  sceneObj.css('width', windowWidth);
-  sceneObj.css('height', windowHeight);
+  //sceneObj.css('width', windowWidth);
+  // sceneObj.css('height', windowHeight);
 
   var rocketMultiX = 0.35,
     rocketMultiY = 0.4;
