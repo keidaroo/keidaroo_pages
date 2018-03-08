@@ -17,11 +17,6 @@ function sizeReset() {
   wallpaper.css('width', windowWidth);
   wallpaper.css('height', windowHeight);
 
-
-  sceneObj.css('width', windowWidth);
-  sceneObj.css('height', windowHeight);
-
-
   var rocketMulti = 0.4;
   var rocketSize = Math.min(rocketMulti * windowWidth, rocketMulti * windowHeight);
   rocketImage.css('background-size', rocketSize);

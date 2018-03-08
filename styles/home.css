@@ -40,7 +40,5 @@ body {
   background-image: url("../pictures/png/rocketBlue.png");
   position: absolute;
   z-index: 2;
-  display: inline;
-  right: 10vw;
-  top: 100vh;
+  display: inline; 
 }
