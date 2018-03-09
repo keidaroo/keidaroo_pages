@@ -21,8 +21,6 @@ function sizeReset() {
 
   logoName.css('font-size', Math.min(0.08 * windowWidth, 0.08 * windowHeight));
 
-  wallpaper.css('width', windowWidth);
-  wallpaper.css('height', windowHeight);
 
   sceneObj.css('width', windowWidth);
   sceneObj.css('height', windowHeight);
