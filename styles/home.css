@@ -69,7 +69,7 @@ body {
   position: absolute;
   text-align: center;
   z-index: 2;
-  background-image: url("../pictures/planetPink.png")
+  background-image: url("../pictures/planetPink.png");
 }
 
 .planetRed {
@@ -78,7 +78,7 @@ body {
   position: absolute;
   text-align: center;
   z-index: 2;
-  background-image: url("../pictures/planetRed.png")
+  background-image: url("../pictures/planetRed.png");
 }
 
 .planetGreen {
@@ -87,5 +87,9 @@ body {
   position: absolute;
   text-align: center;
   z-index: 2;
-  background-image: url("../pictures/planetGreen.png")
+  background-image: url("../pictures/planetGreen.png");
+}
+
+.background {
+  filter: blur(2px);
 }

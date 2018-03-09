@@ -34,23 +34,23 @@ function sizeReset() {
   rocketImage.css('height', rocketSize);
   rocketImage.css('width', rocketSize);
 
-  var brownSize = rocketSize * 0.7;
+  var brownSize = rocketSize * 0.9;
   planetBrown.css('background-size', brownSize);
   planetBrown.css('height', brownSize);
   planetBrown.css('width', brownSize);
 
-  var pinkSize = rocketSize * 0.4;
+  var pinkSize = rocketSize * 0.6;
   planetPink.css('background-size', pinkSize);
   planetPink.css('height', pinkSize);
   planetPink.css('width', pinkSize);
 
 
-  var redSize = rocketSize * 0.5;
+  var redSize = rocketSize * 0.6;
   planetRed.css('background-size', redSize);
   planetRed.css('height', redSize);
   planetRed.css('width', redSize);
 
-  var greenSize = rocketSize * 0.6;
+  var greenSize = rocketSize * 0.8;
   planetGreen.css('background-size', greenSize);
   planetGreen.css('height', greenSize);
   planetGreen.css('width', greenSize);
