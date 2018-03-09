@@ -3,6 +3,11 @@ var wallpaper = $("#home-wallpaper");
 var rocketImage = $(".rocketImage");
 var sceneObj = $(".scene");
 var rocketSmoke = $(".rocketSmoke");
+var planetBrown = $(".planetBrown");
+var planetPink = $(".planetPink");
+var planetRed = $(".planetRed");
+var planetGreen = $(".planetGreen");
+
 var windowHeight = 0;
 var windowWidth = 0;
 var scene = $(".scene").get(0);
@@ -19,8 +24,8 @@ function sizeReset() {
   wallpaper.css('width', windowWidth);
   wallpaper.css('height', windowHeight);
 
-  //sceneObj.css('width', windowWidth);
-  // sceneObj.css('height', windowHeight);
+  sceneObj.css('width', windowWidth);
+  sceneObj.css('height', windowHeight);
 
   var rocketMultiX = 0.35,
     rocketMultiY = 0.4;
@@ -28,6 +33,28 @@ function sizeReset() {
   rocketImage.css('background-size', rocketSize);
   rocketImage.css('height', rocketSize);
   rocketImage.css('width', rocketSize);
+
+  var brownSize = rocketSize * 0.7;
+  planetBrown.css('background-size', brownSize);
+  planetBrown.css('height', brownSize);
+  planetBrown.css('width', brownSize);
+
+  var pinkSize = rocketSize * 0.4;
+  planetPink.css('background-size', pinkSize);
+  planetPink.css('height', pinkSize);
+  planetPink.css('width', pinkSize);
+
+
+  var redSize = rocketSize * 0.5;
+  planetRed.css('background-size', redSize);
+  planetRed.css('height', redSize);
+  planetRed.css('width', redSize);
+
+  var greenSize = rocketSize * 0.6;
+  planetGreen.css('background-size', greenSize);
+  planetGreen.css('height', greenSize);
+  planetGreen.css('width', greenSize);
+
 
   rocketSmoke.css('right', rocketSize);
   rocketSmoke.css('top', rocketSize);
@@ -56,9 +83,9 @@ $(function() {
 
   var ran = Math.floor(Math.random() * (max + 1 - min)) + min;
   var rocketName = ['rocketBlue', 'rocketRed', 'rocketGreen', 'rocketYellow'];
-  var backgroundUrl = 'url("pictures/png/' + rocketName[ran] + '.png ")';
+  var backgroundUrl = 'url("pictures/' + rocketName[ran] + '.png ")';
   rocketImage.css('background-image', backgroundUrl);
-  rocketSmoke.css('background-image', ' url("pictures/png/rectangle.png")');
+  //rocketSmoke.css('background-image', ' url("pictures/rectangle.png")');
   logoName.hide();
 })
 

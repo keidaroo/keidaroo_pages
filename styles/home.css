@@ -52,5 +52,40 @@ body {
   position: absolute;
   display: block;
   z-index: 3;
-  background-image: url("../pictures/png/rectangle.png");
+  /*background-image: url("../pictures/rectangle.png");*/
+}
+
+.planetBrown {
+  top: 10vh;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  background-image: url("../pictures/planetBrown.png");
+}
+
+.planetPink {
+  top: 10vh;
+  left: 70vw;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  background-image: url("../pictures/planetPink.png")
+}
+
+.planetRed {
+  top: 40vh;
+  left: 40vw;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  background-image: url("../pictures/planetRed.png")
+}
+
+.planetGreen {
+  top: 70vh;
+  left: 70vw;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  background-image: url("../pictures/planetGreen.png")
 }
