@@ -14,13 +14,13 @@ body {
   font-stretch: normal;
   position: absolute;
   text-align: left;
-  right: 0;
+  right: 35%;
   left: 5vw;
   bottom: 10vh;
   height: auto;
   display: inline-block;
   overflow: auto;
-  color: #fef0fc;
+  color: #ffffff;
   z-index: 1;
   margin: 0;
 }
@@ -45,6 +45,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .rocketImage {
@@ -85,7 +86,7 @@ body {
 
 .planetRed {
   top: 45vh;
-  left: 30vw;
+  left: 25vw;
   position: absolute;
   text-align: center;
   z-index: 2;
@@ -93,7 +94,7 @@ body {
 }
 
 .planetGreen {
-  top: 10vh;
+  top: 15vh;
   right: 10vw;
   position: absolute;
   text-align: right;
@@ -102,6 +103,5 @@ body {
 }
 
 .background {
-  filter: blur(1px);
   margin: 0;
 }

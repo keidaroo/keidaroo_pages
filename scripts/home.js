@@ -21,7 +21,7 @@ function sizeReset() {
 
   logoName.css('font-size', Math.min(0.08 * windowWidth, 0.08 * windowHeight));
 
-  var rocketMultiX = 0.4,
+  var rocketMultiX = 0.5,
     rocketMultiY = 0.45;
   rocketSize = Math.min(rocketMultiX * windowWidth, rocketMultiY * windowHeight);
   rocketImage.css('background-size', rocketSize);
