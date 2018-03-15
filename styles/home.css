@@ -43,15 +43,18 @@ body {
   top: 0;
   left: 0;
   margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .rocketImage {
+  top: 30vh;
   position: absolute;
   text-align: center;
-  z-index: 2;
+  margin: auto;
+  z-index: 3;
   display: block;
-  left: 60vw;
-  top: 30vh;
+  background-repeat: no-repeat;
 }
 
 .rocketSmoke {
@@ -62,16 +65,18 @@ body {
 }
 
 .planetBrown {
-  top: 10vh;
+  top: 60vh;
+  right: 1vw;
   position: absolute;
-  text-align: center;
+  text-align: right;
   z-index: 2;
   background-image: url("../pictures/planetBrown.png");
 }
 
 .planetPink {
   top: 10vh;
-  left: 70vw;
+  text-align: left;
+  left: 5vw;
   position: absolute;
   text-align: center;
   z-index: 2;
@@ -79,8 +84,8 @@ body {
 }
 
 .planetRed {
-  top: 40vh;
-  left: 40vw;
+  top: 45vh;
+  left: 30vw;
   position: absolute;
   text-align: center;
   z-index: 2;
@@ -88,10 +93,10 @@ body {
 }
 
 .planetGreen {
-  top: 70vh;
-  left: 70vw;
+  top: 10vh;
+  right: 10vw;
   position: absolute;
-  text-align: center;
+  text-align: right;
   z-index: 2;
   background-image: url("../pictures/planetGreen.png");
 }
