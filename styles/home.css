@@ -14,7 +14,6 @@ body {
   font-stretch: normal;
   position: absolute;
   text-align: left;
-  right: 35%;
   left: 5vw;
   bottom: 10vh;
   height: auto;
@@ -34,7 +33,7 @@ body {
   left: 0;
   z-index: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin: 0;
 }
 
@@ -43,7 +42,7 @@ body {
   top: 0;
   left: 0;
   margin: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
 }
