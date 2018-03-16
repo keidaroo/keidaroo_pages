@@ -34,7 +34,7 @@ function sizeReset() {
   planetBrown.css('height', brownSize);
   planetBrown.css('width', brownSize);
 
-  var pinkSize = rocketSize * 0.5;
+  var pinkSize = rocketSize * 0.4;
   planetPink.css('background-size', pinkSize);
   planetPink.css('height', pinkSize);
   planetPink.css('width', pinkSize);

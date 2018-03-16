@@ -66,9 +66,10 @@ body {
 
 .planetBrown {
   top: 60vh;
-  right: 1vw;
+  right: -7vw;
   position: absolute;
   text-align: right;
+  margin: 0;
   z-index: 2;
   background-image: url("../pictures/planetBrown.png");
 }
