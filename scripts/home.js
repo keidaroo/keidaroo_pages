@@ -81,7 +81,7 @@ $(function() {
   var max = 3;
 
   var ran = Math.floor(Math.random() * (max + 1 - min)) + min;
-  var rocketName = ['rocketBlue', 'rocketRed', 'rocketGreen', 'rocketYellow'];
+  var rocketName = ['rocketBlue', 'rocketBlue', 'rocketBlue', 'rocketBlue'];
   var backgroundUrl = 'url("pictures/' + rocketName[ran] + '.png ")';
   rocketImage.css('background-image', backgroundUrl);
   //rocketSmoke.css('background-image', ' url("pictures/rectangle.png")');
