@@ -27,10 +27,50 @@ body {
   margin: 0;
 }
 
+.starSky {
+  background: url("../pictures/starSky.svg");
+  background-size: 450vw 450vw;
+  animation: animate 50s linear infinite;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+}
+
+.starSkyAlpha1 {
+  background: url("../pictures/starSkyAlpha1.svg");
+  background-size: 450vw 450vw;
+  animation: animate 50s linear infinite;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+}
+
+.starSkyAlpha2 {
+  background: url("../pictures/starSkyAlpha2.svg");
+  background-size: 450vw 450vw;
+  animation: animate 50s linear infinite;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+}
+
 #home-wallpaper {
-  background: #333039 url("../pictures/starSky.svg");
-  background-size: 300vw 300vw;
-  animation: animate 25s linear infinite;
+  background: #333039;
   position: absolute;
   display: block;
   top: 0;
