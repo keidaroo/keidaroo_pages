@@ -620,8 +620,8 @@
           invertY: true,
           limitX: false,
           limitY: false,
-          scalarX: 30.0,
-          scalarY: 30.0,
+          scalarX: 17.0
+          scalarY: 17.0,
           frictionX: 0.1,
           frictionY: 0.1,
           originX: 0.5,
