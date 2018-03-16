@@ -28,8 +28,9 @@ body {
 }
 
 #home-wallpaper {
-  background-color: #333039;
-  /*background-image: url("../pictures/homeBackground.jpg");*/
+  background: #333039 url("../pictures/starSky.svg");
+  background-size: 300vw 300vw;
+  animation: animate 25s linear infinite;
   position: absolute;
   display: block;
   top: 0;
@@ -38,6 +39,15 @@ body {
   width: 100vw;
   height: 100%;
   margin: 0;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: right top;
+  }
 }
 
 .scene {
@@ -69,7 +79,7 @@ body {
 
 .planetBrown {
   top: 60vh;
-  right: -7vw;
+  right: -12vw;
   position: absolute;
   text-align: right;
   margin: 0;
@@ -89,7 +99,7 @@ body {
 
 .planetRed {
   top: 45vh;
-  left: 25vw;
+  left: 20vw;
   position: absolute;
   text-align: center;
   z-index: 2;

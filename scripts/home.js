@@ -21,7 +21,7 @@ function sizeReset() {
 
   logoName.css('font-size', Math.min(0.08 * windowWidth, 0.08 * windowHeight));
 
-  var rocketMultiX = 0.5,
+  var rocketMultiX = 0.55,
     rocketMultiY = 0.45;
   rocketSize = Math.min(rocketMultiX * windowWidth, rocketMultiY * windowHeight);
   rocketImage.css('background-size', rocketSize);
@@ -44,7 +44,11 @@ function sizeReset() {
   planetRed.css('background-size', redSize);
   planetRed.css('height', redSize);
   planetRed.css('width', redSize);
-
+  if (windowHeight > windowWidth) {
+    planetRed.css('left', redSize / 4);
+  } else {
+    planetRed.css('left', '20vw');
+  }
   var greenSize = rocketSize * 0.4;
   planetGreen.css('background-size', greenSize);
   planetGreen.css('height', greenSize);
