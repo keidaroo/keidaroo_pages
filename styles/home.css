@@ -1,15 +1,18 @@
+html {
+  height: 100%;
+}
+
 body {
   top: 0;
   right: 0;
-  left: 0;
-  bottom: 0;
-  height: 100vh;
   width: 100%;
   margin: 0;
+  height: 100%;
 }
 
 .logoName {
-  font-family: 'Ubuntu Mono', monospace;
+  /*font-family: 'Ubuntu Mono', monospace;*/
+  font-family: 'Advent Pro', sans-serif;
   font-size: 10vw;
   font-stretch: normal;
   position: absolute;
