@@ -30,7 +30,7 @@ body {
 .starSky {
   background: url("../pictures/starSky.svg");
   background-size: 450vw 450vw;
-  animation: animate 50s linear infinite;
+  animation: animate 30s linear infinite;
   position: absolute;
   display: block;
   top: 0;
@@ -69,10 +69,10 @@ body {
 
 @keyframes animate {
   0% {
-    background-position: left bottom;
+    background-position: 0% 100%;
   }
   100% {
-    background-position: right top;
+    background-position: 100% 0%;
   }
 }
 
@@ -116,7 +116,7 @@ body {
 
 @keyframes brownAnimate {
   0% {
-    transform: translateY(-1%);
+    transform: translateY(-1.5%);
   }
   100% {
     transform: translateY(0);
@@ -136,7 +136,7 @@ body {
 
 @keyframes pinkAnimate {
   0% {
-    transform: translateY(-4%);
+    transform: translateY(-7%);
   }
   100% {
     transform: translateY(0);
