@@ -27,6 +27,8 @@ body {
   margin: 0;
 }
 
+.ld {}
+
 .starSky {
   background: url("../pictures/starSky.svg");
   background-size: 450vw 450vw;

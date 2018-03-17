@@ -11,6 +11,7 @@ var planetGreen = $(".planetGreen");
 var windowHeight = 0;
 var windowWidth = 0;
 var scene = $(".scene").get(0);
+
 var parallaxInstance = new Parallax(scene);
 var rocketSize = 0;
 
