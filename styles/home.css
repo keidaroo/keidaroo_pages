@@ -116,7 +116,7 @@ body {
 
 @keyframes brownAnimate {
   0% {
-    transform: translateY(-2%);
+    transform: translateY(-3%);
   }
   100% {
     transform: translateY(0);
@@ -131,12 +131,12 @@ body {
   text-align: center;
   z-index: 2;
   background-image: url("../pictures/planetPink.png");
-  animation: pinkAnimate 2s ease-in-out infinite alternate;
+  animation: pinkAnimate 2.2s ease-in-out infinite alternate;
 }
 
 @keyframes pinkAnimate {
   0% {
-    transform: translateY(-6%);
+    transform: translateY(-10%);
   }
   100% {
     transform: translateY(0);
@@ -144,18 +144,18 @@ body {
 }
 
 .planetRed {
-  top: 40vh;
+  top: 50vh;
   left: 20vw;
   position: absolute;
   text-align: center;
   z-index: 2;
   background-image: url("../pictures/planetRed.png");
-  animation: redAnimate 2.5s ease-in-out infinite alternate;
+  animation: redAnimate 2s ease-in-out infinite alternate;
 }
 
 @keyframes redAnimate {
   0% {
-    transform: translateY(-7%);
+    transform: translateY(-13%);
   }
   100% {
     transform: translateY(0);
@@ -174,13 +174,16 @@ body {
 
 @keyframes greenAnimate {
   0% {
-    transform: translateY(-4%);
+    transform: translateY(-7%);
   }
   100% {
     transform: translateY(0);
   }
 }
 
-.background {
+.printf {
+  background-color: #a70f6e;
+  height: 50%;
+  width: 100%;
   margin: 0;
 }
