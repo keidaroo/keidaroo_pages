@@ -7,12 +7,12 @@ var planetBrown = $(".planetBrown");
 var planetPink = $(".planetPink");
 var planetRed = $(".planetRed");
 var planetGreen = $(".planetGreen");
+var spaceman = $("#spaceman");
 
 var windowHeight = 0;
 var windowWidth = 0;
 var scene = $(".scene").get(0);
 
-var parallaxInstance = new Parallax(scene);
 var rocketSize = 0;
 
 function sizeReset() {
@@ -40,6 +40,11 @@ function sizeReset() {
   planetPink.css('height', pinkSize);
   planetPink.css('width', pinkSize);
 
+  var spacemanSize = rocketSize * 0.3;
+  spaceman.css('background-size', spacemanSize);
+  spaceman.css('height', spacemanSize * 1.5);
+  spaceman.css('width', spacemanSize);
+  spaceman.css('transform', "rotate(30deg)");
 
   var redSize = rocketSize * 0.6;
   planetRed.css('background-size', redSize);
