@@ -136,7 +136,7 @@ body {
 
 @keyframes pinkAnimate {
   0% {
-    transform: translateY(-7%);
+    transform: translateY(-5%);
   }
   100% {
     transform: translateY(0);
