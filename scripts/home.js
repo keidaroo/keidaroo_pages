@@ -40,7 +40,7 @@ function sizeReset() {
   planetPink.css('height', pinkSize);
   planetPink.css('width', pinkSize);
 
-  var spacemanSize = rocketSize * 0.3;
+  var spacemanSize = rocketSize * 0.4;
   spaceman.css('background-size', spacemanSize);
   spaceman.css('height', spacemanSize * 1.5);
   spaceman.css('width', spacemanSize);
@@ -53,7 +53,7 @@ function sizeReset() {
   if (windowHeight > windowWidth) {
     planetRed.css('left', redSize / 4);
   } else {
-    planetRed.css('left', '20vw');
+    planetRed.css('left', '22vw');
   }
   var greenSize = rocketSize * 0.4;
   planetGreen.css('background-size', greenSize);
