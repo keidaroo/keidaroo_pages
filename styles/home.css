@@ -209,11 +209,21 @@ body {
   }
 }
 
-.printf {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 3rem;
-  background-color: #a70f6e;
+#printf {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #ff00e7;
   height: 50%;
   width: 100%;
   margin: 0;
+}
+
+#printfMain {
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+#printfSub {
+  text-align: right;
+  font-size: 3rem;
+  color: #ffffff;
 }
