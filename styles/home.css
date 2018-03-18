@@ -96,10 +96,10 @@ body {
 }
 
 .rocketImage {
-  top: 50vh;
+  top: 40vh;
   position: relative;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   z-index: 3;
   display: block;
   background-repeat: no-repeat;
@@ -153,7 +153,7 @@ body {
 }
 
 .planetRed {
-  top: 50vh;
+  top: 30vh;
   left: 20vw;
   position: absolute;
   text-align: center;
@@ -172,7 +172,7 @@ body {
 }
 
 .planetGreen {
-  top: 15vh;
+  top: 20vh;
   right: 10vw;
   position: absolute;
   text-align: right;
@@ -192,8 +192,9 @@ body {
 
 #spaceman {
   top: 5vh;
-  position: absolute;
-  right: 45%;
+  position: relative;
+  text-align: center;
+  margin: auto;
   z-index: 2;
   background-image: url("../pictures/spaceman.png");
   background-repeat: no-repeat;
