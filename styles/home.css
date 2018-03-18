@@ -210,6 +210,8 @@ body {
 }
 
 .printf {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
   background-color: #a70f6e;
   height: 50%;
   width: 100%;
