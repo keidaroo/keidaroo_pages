@@ -225,7 +225,8 @@ body {
 
 #printf {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #cf4545;
+  font-weight: bold;
+  background-color: #cb5050;
   top: 0;
   height: 120%;
   width: 100%;
