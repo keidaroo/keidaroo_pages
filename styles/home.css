@@ -209,19 +209,47 @@ body {
   }
 }
 
+.scrollButton {
+  position: absolute;
+  top: 90%;
+  width: 5vh;
+  height: 5vh;
+  left: 47.5%;
+  margin-left: -12px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+  z-index: 4;
+}
+
 #printf {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #db5d5d;
+  background-color: #cf4545;
+  top: 0;
   height: 120%;
   width: 100%;
   margin: 0;
 }
 
 #printfMain {
+  top: 20%;
+  left: 7%;
+  width: 70vw;
   font-size: 5rem;
   position: relative;
-  width: 80%;
-  top: 100px;
-  left: 100px;
   color: #ffffff;
+}
+
+#ageDisplay {
+  color: #e2ddff;
+  font-size: 6rem;
+}
+
+#compColor {
+  color: #e2ddff;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
