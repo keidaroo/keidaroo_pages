@@ -254,3 +254,29 @@ body {
 .nowrap {
   white-space: nowrap;
 }
+
+.clock {
+  top: 40%;
+  height: 25vh;
+  width: 25vh;
+  right: 5vw;
+  margin: 0;
+  position: relative;
+  border-radius: 50%;
+  z-index: 4;
+  background: #000;
+}
+
+.minute {
+  width: 0;
+  height: 0;
+  left: 50%;
+  position: relative;
+  margin: -50% -1px 0;
+  padding: 50% 1px 0;
+  background: #fff;
+  transform-origin: 50% 100%;
+  z-index: 5;
+  border-radius: 3px;
+  transform: rotate(10deg);
+}
