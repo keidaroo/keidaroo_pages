@@ -9,6 +9,8 @@ var planetRed = $(".planetRed");
 var planetGreen = $(".planetGreen");
 var spaceman = $("#spaceman");
 var ageDisplay = $("#ageDisplay");
+var minute = $('.minute');
+var hour = $('.hour');
 
 var windowHeight = 0;
 var windowWidth = 0;
@@ -67,18 +69,28 @@ function sizeReset() {
   rocketSmoke.css('background-size', rocketSize * 0.1);
   rocketSmoke.css('width', rocketSize * 0.1);
   rocketSmoke.css('height', rocketSize * 0.1);
-  //setTimeout('rect()');
 }
 
-function rect() {
-  rocketSmoke.animate({
-    top: windowHeight,
-    right: '10vw'
-  }, 3000).animate({
-    top: rocketSize,
-    right: rocketSize
-  }, 0)
-  setTimeout("rect()", 3000);
+function clockAnimate() {
+  var dt = new Date();
+  var h = dt.getHours();
+  var m = dt.getMinutes();
+  console.log(m);
+  var mRotate = 6.0 * m;
+  var hRotate = 30 * h + 0.5 * m;
+  console.log(mRotate * 0.5);
+  console.log(`rotate(${mRotate}deg)`);
+  minute.animate({
+    opacity: 1
+  }, {
+    duration: 1000,
+    step: function(now) {
+      $(this).css({
+        transform: 'rotate(' + (now * mRotate) + 'deg)'
+      })
+    }
+  }, 1000);
+  hour.css('transform', `rotate(${hRotate}deg)`);
 }
 
 $(function() {
@@ -101,6 +113,7 @@ $(function() {
 
 $(document).ready(function() {
   logoName.fadeIn(1200);
+  clockAnimate();
 });
 $(window).resize(function() {
   sizeReset();

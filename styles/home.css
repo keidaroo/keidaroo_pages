@@ -214,7 +214,7 @@ body {
   top: 90%;
   width: 5vh;
   height: 5vh;
-  left: 47.5%;
+  display: inline;
   margin-left: -12px;
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
@@ -223,20 +223,34 @@ body {
   z-index: 4;
 }
 
+#spacemanHor {
+  position: relative;
+  display: inline-block;
+  top: 10vh;
+  left: 1%;
+  height: 20rem;
+  width: 20rem;
+  background-size: 20rem;
+  background-image: url("../pictures/spacemanHor.png");
+  z-index: 1;
+}
+
 #printf {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   background-color: #cb5050;
   top: 0;
-  height: 120%;
+  text-align: center;
+  height: 110%;
   width: 100%;
   margin: 0;
 }
 
 #printfMain {
   top: 20%;
-  left: 7%;
-  width: 70vw;
+  margin: auto;
+  text-align: left;
+  width: 52.5rem;
   font-size: 5rem;
   position: relative;
   color: #ffffff;
@@ -253,4 +267,70 @@ body {
 
 .nowrap {
   white-space: nowrap;
+}
+
+#clockmain {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  background-color: #50aacb;
+  top: 0;
+  height: 50rem;
+  width: 100%;
+  margin: 0;
+}
+
+#city {
+  top: 15rem;
+  font-size: 6rem;
+  position: relative;
+  line-height: 20rem;
+  left: 7%;
+  display: inline;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+#tokyoColor {
+  color: #402880;
+}
+
+.clock {
+  top: 15rem;
+  height: 20rem;
+  width: 20rem;
+  right: 7vw;
+  float: right;
+  margin: 0;
+  position: relative;
+  border-radius: 50%;
+  z-index: 4;
+  background-image: linear-gradient(#50aacb, #9cb8c3);
+}
+
+.minute {
+  top: 0;
+  width: 0;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  padding: 50% 2px 0;
+  background-color: #3b3b3b;
+  transform-origin: 50% 100%;
+  z-index: 5;
+  border-radius: 5px;
+  transform: rotate(0deg);
+}
+
+.hour {
+  top: 25%;
+  width: 0;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  padding: 25% 3px 0;
+  background-image: linear-gradient(#402880, #b3a3e0);
+  transform-origin: 50% 100%;
+  z-index: 5;
+  border-radius: 5px;
+  transform: rotate(0deg);
 }
