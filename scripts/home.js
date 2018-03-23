@@ -11,7 +11,7 @@ var spaceman = $("#spaceman");
 var ageDisplay = $("#ageDisplay");
 var minute = $('.minute');
 var hour = $('.hour');
-
+var clock = $(".clock");
 var windowHeight = 0;
 var windowWidth = 0;
 var scene = $(".scene").get(0);
@@ -78,19 +78,29 @@ function clockAnimate() {
   console.log(m);
   var mRotate = 6.0 * m;
   var hRotate = 30 * h + 0.5 * m;
-  console.log(mRotate * 0.5);
-  console.log(`rotate(${mRotate}deg)`);
   minute.animate({
-    opacity: 1
+    zIndex: 1
   }, {
-    duration: 1000,
+    duration: 2000,
+    easing: 'easeOutQuart',
     step: function(now) {
       $(this).css({
         transform: 'rotate(' + (now * mRotate) + 'deg)'
       })
     }
-  }, 1000);
-  hour.css('transform', `rotate(${hRotate}deg)`);
+  });
+  hour.animate({
+    zIndex: 1
+  }, {
+    duration: 2000,
+    easing: 'easeOutQuart',
+    step: function(now) {
+      $(this).css({
+        transform: 'rotate(' + (now * hRotate) + 'deg)'
+      })
+    }
+  });
+
 }
 
 $(function() {
@@ -108,12 +118,28 @@ $(function() {
   var nowDate = new Date();
   var bornDate = new Date(2002, 10, 5, 0, 0);
   ageDisplay.html((Math.floor((nowDate.getTime() - bornDate.getTime()) / 365 / 24 / 36) / 100000).toFixed(4));
-
+  var f = false;
+  if (!f) {
+    $(window).scroll(function() {
+      clock.each(function() {
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        if (scroll > imgPos - windowHeight + windowHeight / 5 && !f) {
+          clockAnimate();
+          f = true;
+        }
+      });
+      $(function() {
+        setInterval(function() {
+          clockAnimate()
+        }, 60000);
+      });
+    });
+  }
 })
 
 $(document).ready(function() {
   logoName.fadeIn(1200);
-  clockAnimate();
 });
 $(window).resize(function() {
   sizeReset();

@@ -274,7 +274,7 @@ body {
   font-weight: bold;
   background-color: #50aacb;
   top: 0;
-  height: 50rem;
+  height: 55rem;
   width: 100%;
   margin: 0;
 }
@@ -284,10 +284,20 @@ body {
   font-size: 6rem;
   position: relative;
   line-height: 20rem;
-  left: 7%;
+  left: 4%;
   display: inline;
   color: #ffffff;
   vertical-align: middle;
+  z-index: 2;
+}
+
+#citySup {
+  font-size: 3rem;
+  top: 40%;
+  position: relative;
+  left: 5%;
+  width: 50%;
+  color: #fff;
 }
 
 #tokyoColor {
@@ -303,11 +313,12 @@ body {
   margin: 0;
   position: relative;
   border-radius: 50%;
-  z-index: 4;
-  background-image: linear-gradient(#50aacb, #9cb8c3);
+  z-index: 0;
+  background-image: linear-gradient(#50aacb, #a98fd4);
 }
 
 .minute {
+  opacity: 1;
   top: 0;
   width: 0;
   height: 0;
@@ -316,21 +327,22 @@ body {
   padding: 50% 2px 0;
   background-color: #3b3b3b;
   transform-origin: 50% 100%;
-  z-index: 5;
+  z-index: 0;
   border-radius: 5px;
   transform: rotate(0deg);
 }
 
 .hour {
-  top: 25%;
+  opacity: 1;
+  top: 23%;
   width: 0;
   height: 0;
   left: 50%;
   position: absolute;
-  padding: 25% 3px 0;
+  padding: 27% 3px 0;
   background-image: linear-gradient(#402880, #b3a3e0);
   transform-origin: 50% 100%;
-  z-index: 5;
+  z-index: 0;
   border-radius: 5px;
   transform: rotate(0deg);
 }
