@@ -74,8 +74,9 @@ function sizeReset() {
 function clockAnimate() {
   var dt = new Date();
   var h = dt.getHours();
+  dt.setHours(h + dt.getTimezoneOffset() / 60 + 9);
   var m = dt.getMinutes();
-  console.log(m);
+  h = dt.getHours();
   var mRotate = 6.0 * m;
   var hRotate = 30 * h + 0.5 * m;
   minute.animate({
@@ -119,8 +120,20 @@ $(function() {
   var bornDate = new Date(2002, 10, 5, 0, 0);
   ageDisplay.html((Math.floor((nowDate.getTime() - bornDate.getTime()) / 365 / 24 / 36) / 100000).toFixed(4));
   var f = false;
-  if (!f) {
-    $(window).scroll(function() {
+  var pf = false;
+  $(window).scroll(function() {
+    $('#printfMain').each(function() {
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      if (scroll > imgPos - windowHeight + windowHeight / 5 && !pf) {
+        console.log('a');
+        pf = 1;
+        $(this).animate({
+          opacity: 1
+        }, 2000);
+      }
+    });
+    if (!f) {
       clock.each(function() {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
@@ -134,8 +147,9 @@ $(function() {
           clockAnimate()
         }, 60000);
       });
-    });
-  }
+    }
+  });
+
 })
 
 $(document).ready(function() {

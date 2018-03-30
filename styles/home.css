@@ -247,6 +247,7 @@ body {
 }
 
 #printfMain {
+  opacity: 0;
   top: 20%;
   margin: auto;
   text-align: left;
@@ -314,7 +315,8 @@ body {
   position: relative;
   border-radius: 50%;
   z-index: 0;
-  background-image: linear-gradient(#50aacb, #a98fd4);
+  /*background: #14013e;*/
+  background-image: linear-gradient(#6200a6, #14013e);
 }
 
 .minute {
@@ -324,25 +326,65 @@ body {
   height: 0;
   left: 50%;
   position: absolute;
-  padding: 50% 2px 0;
-  background-color: #3b3b3b;
+  padding: 50% 4px 0;
+  margin: 0;
+  background-color: #fff;
+  transform-origin: 50% 100%;
+  z-index: 0;
+  border-radius: 4px;
+  transform: rotate(0deg);
+}
+
+.hour {
+  opacity: 1;
+  top: 25%;
+  width: 0;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  padding: 25% 5px 0;
+  background: #e6e3e3;
   transform-origin: 50% 100%;
   z-index: 0;
   border-radius: 5px;
   transform: rotate(0deg);
 }
 
-.hour {
-  opacity: 1;
-  top: 23%;
-  width: 0;
-  height: 0;
-  left: 50%;
+#clockCenter {
   position: absolute;
-  padding: 27% 3px 0;
-  background-image: linear-gradient(#402880, #b3a3e0);
-  transform-origin: 50% 100%;
-  z-index: 0;
-  border-radius: 5px;
-  transform: rotate(0deg);
+  height: 3%;
+  width: 3%;
+  top: 48.5%;
+  left: 50%;
+  background-color: #fff;
+  z-index: 3;
+  border-radius: 50%;
+}
+
+#hobbyList {
+  height: 60rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #9e73ad;
+  top: 20vh;
+}
+
+#topicHobby {
+  font-size: 3rem;
+}
+
+.listHobby {
+  font-size: 4rem;
+  color: #fff;
+}
+
+#hobbyTrans {
+  top: 10rem;
+  position: relative;
+  left: 5vw;
+  width: 90vw;
+  overflow: visible;
+}
+
+.highlight {
+  color: #ac2777;
 }
