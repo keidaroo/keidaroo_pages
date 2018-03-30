@@ -321,18 +321,18 @@ body {
 
 .minute {
   opacity: 1;
-  top: 0;
+  top: 5%;
   width: 0;
   height: 0;
   left: 50%;
   position: absolute;
-  padding: 50% 4px 0;
+  padding: 45% 4px 0;
   margin: 0;
   background-color: #fff;
   transform-origin: 50% 100%;
   z-index: 0;
   border-radius: 4px;
-  transform: rotate(0deg);
+  transform: rotate(60deg);
 }
 
 .hour {
@@ -344,7 +344,7 @@ body {
   position: absolute;
   padding: 25% 5px 0;
   background: #fff;
-  transform-origin: 50% 100%;
+  transform-origin: 25% 100%;
   z-index: 0;
   border-radius: 5px;
   transform: rotate(0deg);

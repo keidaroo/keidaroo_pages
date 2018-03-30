@@ -85,7 +85,7 @@ function clockAnimate() {
     easing: 'easeOutQuart',
     step: function(now) {
       $(this).css({
-        transform: 'rotate(' + (now * mRotate) + 'deg)'
+        //transform: 'rotate(' + (now * mRotate) + 'deg)'
       })
     }
   });
