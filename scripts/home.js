@@ -23,7 +23,6 @@ function sizeReset() {
   windowHeight = parseInt($(window).height());
   windowWidth = parseInt($(window).width());
 
-  logoName.css('font-size', Math.min(0.08 * windowWidth, 0.08 * windowHeight));
 
   var rocketMultiX = 0.55,
     rocketMultiY = 0.45;
