@@ -364,6 +364,7 @@ body {
 
 #hobbyList {
   height: 100%;
+  width: 100%;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   position: relative;
@@ -379,6 +380,7 @@ body {
 .listHobby {
   font-size: 4rem;
   opacity: 0;
+  width: 100%;
   color: #ffffff;
 }
 
@@ -386,7 +388,7 @@ body {
   top: 12vh;
   position: relative;
   left: 5vw;
-  width: 90vw;
+  width: 88vw;
   overflow: visible;
 }
 
