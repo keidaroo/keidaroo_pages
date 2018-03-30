@@ -362,24 +362,26 @@ body {
 }
 
 #hobbyList {
-  height: 60rem;
+  height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
-  background: #9e73ad;
-  top: 20vh;
+  position: relative;
+  top: -2vh;
+  background: #965fc6;
 }
 
 #topicHobby {
   font-size: 3rem;
+  color: #3e006f;
 }
 
 .listHobby {
   font-size: 4rem;
-  color: #fff;
+  color: #ffffff;
 }
 
 #hobbyTrans {
-  top: 10rem;
+  top: 12vh;
   position: relative;
   left: 5vw;
   width: 90vw;
@@ -387,5 +389,5 @@ body {
 }
 
 .highlight {
-  color: #ac2777;
+  color: #57009c;
 }
