@@ -12,6 +12,9 @@ var ageDisplay = $("#ageDisplay");
 var minute = $('.minute');
 var hour = $('.hour');
 var clock = $(".clock");
+var listOpacity = $('#listOpacity');
+var hobbyList = $("#hobbyList");
+var hobbyTrans = $('#hobbyTrans');
 var windowHeight = 0;
 var windowWidth = 0;
 var scene = $(".scene").get(0);
@@ -68,6 +71,12 @@ function sizeReset() {
   rocketSmoke.css('background-size', rocketSize * 0.1);
   rocketSmoke.css('width', rocketSize * 0.1);
   rocketSmoke.css('height', rocketSize * 0.1);
+
+  if (windowHeight >= windowWidth) {
+    hobbyList.css('height', parseInt(hobbyList.css('width')) * 1.414);
+    hobbyTrans.css('top', '20rem');
+
+  }
 }
 
 function clockAnimate() {
@@ -85,7 +94,7 @@ function clockAnimate() {
     easing: 'easeOutQuart',
     step: function(now) {
       $(this).css({
-        //transform: 'rotate(' + (now * mRotate) + 'deg)'
+        transform: 'rotate(' + (now * mRotate) + 'deg)'
       })
     }
   });
@@ -119,8 +128,20 @@ $(function() {
   var bornDate = new Date(2002, 10, 5, 0, 0);
   ageDisplay.html((Math.floor((nowDate.getTime() - bornDate.getTime()) / 365 / 24 / 36) / 100000).toFixed(4));
   var f = false;
-  var pf = false;
+  var pf = false,
+    cf = false;
   $(window).scroll(function() {
+    listOpacity.each(function() {
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      if (scroll > imgPos - windowHeight + windowHeight / 5 && !cf) {
+        console.log('a');
+        cf = 1;
+        $('.listHobby').animate({
+          opacity: 1
+        }, 3000);
+      }
+    });
     $('#printfMain').each(function() {
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
@@ -129,7 +150,7 @@ $(function() {
         pf = 1;
         $(this).animate({
           opacity: 1
-        }, 2000);
+        }, 3000);
       }
     });
     if (!f) {

@@ -316,7 +316,8 @@ body {
   border-radius: 50%;
   z-index: 0;
   background: #56447e;
-  /*background-image: linear-gradient(#6200a6, #14013e);*/
+  background-image: url('../pictures/clock.svg');
+  background-size: 20rem;
 }
 
 .minute {
@@ -332,7 +333,7 @@ body {
   transform-origin: 50% 100%;
   z-index: 0;
   border-radius: 4px;
-  transform: rotate(60deg);
+  transform: rotate(0deg);
 }
 
 .hour {
@@ -352,10 +353,10 @@ body {
 
 #clockCenter {
   position: absolute;
-  height: 3%;
-  width: 3%;
+  height: 5%;
+  width: 5%;
   top: 48.5%;
-  left: 50%;
+  left: 48.5%;
   background-color: #fff;
   z-index: 3;
   border-radius: 50%;
@@ -367,16 +368,17 @@ body {
   font-weight: bold;
   position: relative;
   top: -2vh;
-  background: #965fc6;
+  background: #8b66ac;
 }
 
 #topicHobby {
   font-size: 3rem;
-  color: #3e006f;
+  color: #45047a;
 }
 
 .listHobby {
   font-size: 4rem;
+  opacity: 0;
   color: #ffffff;
 }
 
