@@ -75,7 +75,9 @@ function sizeReset() {
   if (windowHeight >= windowWidth) {
     hobbyList.css('height', parseInt(hobbyList.css('width')) * 1.414);
     hobbyTrans.css('top', '20rem');
-
+  } else {
+    hobbyList.css('height', '120%');
+    hobbyTrans.css('top', '10rem');
   }
 }
 

@@ -380,12 +380,12 @@ body {
 .listHobby {
   font-size: 4rem;
   opacity: 0;
-  width: 100%;
+  width: 130%;
   color: #ffffff;
 }
 
 #hobbyTrans {
-  top: 12vh;
+  top: 10rem;
   position: relative;
   left: 5vw;
   width: 88vw;
