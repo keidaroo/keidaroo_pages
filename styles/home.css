@@ -315,7 +315,7 @@ body {
   position: relative;
   border-radius: 50%;
   z-index: 0;
-  background: #56447e;
+  background: #5f6075;
   background-image: url('../pictures/clock.svg');
   background-size: 20rem;
 }
@@ -338,7 +338,7 @@ body {
 
 .hour {
   opacity: 1;
-  top: 25%;
+  top: 24.7%;
   width: 0;
   height: 0;
   left: 50%;
