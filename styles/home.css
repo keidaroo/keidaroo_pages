@@ -273,7 +273,7 @@ body {
 #clockmain {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
-  background-color: #50aacb;
+  background-color: #5abcdf;
   top: 0;
   height: 55rem;
   width: 100%;
@@ -322,12 +322,12 @@ body {
 
 .minute {
   opacity: 1;
-  top: 5%;
+  top: 10%;
   width: 0;
   height: 0;
   left: 50%;
   position: absolute;
-  padding: 45% 4px 0;
+  padding: 40% 4px 0;
   margin: 0;
   background-color: #fff;
   transform-origin: 50% 100%;
@@ -355,8 +355,8 @@ body {
   position: absolute;
   height: 5%;
   width: 5%;
-  top: 48.5%;
-  left: 48.5%;
+  top: 47.5%;
+  left: 49%;
   background-color: #fff;
   z-index: 3;
   border-radius: 50%;
