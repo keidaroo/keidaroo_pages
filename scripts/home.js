@@ -73,11 +73,13 @@ function sizeReset() {
   rocketSmoke.css('height', rocketSize * 0.1);
 
   if (windowHeight >= windowWidth) {
-    hobbyList.css('height', parseInt(hobbyList.css('width')) * 1.414);
+    hobbyList.css('height', parseInt(hobbyList.css('width')) * 1.5);
     hobbyTrans.css('top', '20rem');
   } else {
     hobbyList.css('height', '120%');
     hobbyTrans.css('top', '10rem');
+    $('#blueScreen').css('bottom', '8%');
+    $('#blueScreen').css('right', '5%');
   }
 }
 
