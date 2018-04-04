@@ -81,6 +81,11 @@ function sizeReset() {
     $('#blueScreen').css('bottom', '8%');
     $('#blueScreen').css('right', '5%');
   }
+  var printfMainHeight = parseInt($("#printfMain").css('height'));
+  $('#printf').css('height', Math.max(parseInt($("#printf").css('height')), 1000));
+  $('#hobbyList').css('height', Math.max(parseInt($("#printf").css('height')), 1100));
+
+
 }
 
 function clockAnimate() {
