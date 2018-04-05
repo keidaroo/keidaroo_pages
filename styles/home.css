@@ -489,7 +489,7 @@ div #city {
   right: 4rem;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1081px) {
   .icons {
     font-size: 2rem;
     top: 13vh;
@@ -505,7 +505,7 @@ div #city {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1081px) {
   .icons {
     font-size: 3rem;
     top: 9vh;
