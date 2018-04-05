@@ -131,8 +131,7 @@ $(function() {
   var rocketName = ['rocketBlue', 'rocketBlue', 'rocketBlue', 'rocketBlue'];
   var backgroundUrl = 'url("pictures/' + rocketName[ran] + '.png ")';
   rocketImage.css('background-image', backgroundUrl);
-  //rocketSmoke.css('background-image', ' url("pictures/rectangle.png")');
-  logoName.hide();
+
   var nowDate = new Date();
   var bornDate = new Date(2002, 10, 5, 0, 0);
   ageDisplay.html((Math.floor((nowDate.getTime() - bornDate.getTime()) / 365 / 24 / 36) / 100000).toFixed(4));

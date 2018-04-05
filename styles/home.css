@@ -372,13 +372,13 @@ div #city {
   position: relative;
   top: -5vh;
   margin-bottom: -5vh;
-  background: #EDA184;
+  background: #ECA086;
   overflow: hidden;
 }
 
 #topicHobby {
   font-size: 3.5rem;
-  color: #d55180;
+  color: #D3537E;
 }
 
 .listHobby {
@@ -409,37 +409,141 @@ div #city {
 }
 
 .highlight {
-  color: #D45D87;
+  color: #D25E85;
 }
 
 #contactMe {
+  overflow: hidden;
   position: relative;
-  height: 40rem;
-  background: #6CBAD8;
+  height: 50rem;
+  background: #45A1CF;
   width: 100%;
+  line-height: 3.5rem;
 }
 
 #messageIMG {
   background: url("../pictures/letter.png");
   position: absolute;
   background-size: 20rem;
-  top: 5%;
+  top: 5rem;
   height: 20rem;
   width: 20rem;
   transform: translateX(-10rem);
 }
 
 #mailMes {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   position: relative;
   text-align: left;
-  color: #155b9c;
-  top: 25rem;
+  color: #fff;
+  top: 30rem;
+}
+
+#mesSup {
+  position: absolute;
+  left: -25.8rem;
+  font-size: 2.5rem;
+  color: #fff;
 }
 
 .mesCenter {
   text-align: center;
   width: 100vw;
+}
+
+.mailAdd {
+  position: absolute;
+  left: -25.8rem;
+  font-size: 3.5rem;
+  color: #fad688;
+}
+
+.mesCol {
+  color: #fff;
+}
+
+.SNS {
+  height: 20vh;
+  background: #424145;
+  overflow: hidden;
+}
+
+.icons {
+  position: relative;
+  color: white;
+}
+
+.hatenablog {
+  background: url('../pictures/hatenablog-logo.svg');
+  position: relative;
+  display: inline-block;
+  right: 1rem;
+  transform: translateY(0.3rem);
+}
+
+.fa-twitter {
+  right: 13rem;
+}
+
+.fa-instagram {
+  right: 10rem;
+}
+
+.fa-github {
+  right: 7rem;
+}
+
+.fa-at {
+  right: 4rem;
+}
+
+@media screen and (min-width: 767px) {
+  .icons {
+    font-size: 2rem;
+    top: 13vh;
+  }
+  .hatenablog {
+    height: 2rem;
+    width: 2rem;
+    background-size: 2rem;
+    top: 13vh;
+  }
+  #special {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .icons {
+    font-size: 3rem;
+    top: 9vh;
+  }
+  .hatenablog {
+    height: 3rem;
+    width: 3rem;
+    background-size: 3rem;
+    top: 9vh;
+  }
+  #special {
+    font-size: 1.4rem;
+  }
+}
+
+#special {
+  position: relative;
+  color: #fff;
+  top: 4vh;
+  left: 1%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+#SNSlist {
+  text-align: right;
+}
+
+.white {
+  color: #fff;
 }
