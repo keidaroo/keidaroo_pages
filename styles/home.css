@@ -353,17 +353,6 @@ div #city {
   transform: rotate(0deg);
 }
 
-#clockCenter {
-  position: absolute;
-  height: 1rem;
-  width: 1rem;
-  top: 9.5rem;
-  left: 9.5rem;
-  background-color: #fff;
-  z-index: 3;
-  border-radius: 50%;
-}
-
 #hobbyList {
   height: 100%;
   width: 100%;
@@ -438,6 +427,7 @@ div #city {
   position: relative;
   text-align: left;
   color: #fff;
+  opacity: 0;
   top: 30rem;
 }
 

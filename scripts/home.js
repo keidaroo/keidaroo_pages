@@ -137,7 +137,8 @@ $(function() {
   ageDisplay.html((Math.floor((nowDate.getTime() - bornDate.getTime()) / 365 / 24 / 36) / 100000).toFixed(4));
   var f = false;
   var pf = false,
-    cf = false;
+    cf = false,
+    mf = false;
   $(window).scroll(function() {
     listOpacity.each(function() {
       var imgPos = $(this).offset().top;
@@ -159,6 +160,17 @@ $(function() {
         $(this).animate({
           opacity: 1
         }, 3000);
+      }
+    });
+    $('#mailMes').each(function() {
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      if (scroll > imgPos - windowHeight + windowHeight / 5 && !mf) {
+        console.log('a');
+        mf = 1;
+        $(this).animate({
+          opacity: 1
+        }, 2000);
       }
     });
     if (!f) {
