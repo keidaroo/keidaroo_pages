@@ -75,6 +75,8 @@ function sizeReset() {
   if (windowHeight >= windowWidth) {
     hobbyList.css('height', parseInt(hobbyList.css('width')) * 1.5);
     hobbyTrans.css('top', '20rem');
+    $('#blueScreen').css('bottom', '3%');
+    $('#blueScreen').css('right', '5%');
   } else {
     hobbyList.css('height', '120%');
     hobbyTrans.css('top', '10rem');
@@ -165,7 +167,7 @@ $(function() {
     $('#mailMes').each(function() {
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
-      if (scroll > imgPos - windowHeight + windowHeight / 5 && !mf) {
+      if (scroll > imgPos - windowHeight - windowHeight / 5 && !mf) {
         console.log('a');
         mf = 1;
         $(this).animate({
