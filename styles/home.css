@@ -435,6 +435,8 @@ div #city {
 
 #mesSup {
   position: absolute;
+  display: inline-block;
+  width: 100vw;
   left: -25.8rem;
   font-size: 2.5rem;
   color: #fff;
