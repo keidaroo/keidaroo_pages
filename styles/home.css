@@ -240,7 +240,7 @@ body {
   overflow: hidden;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
-  background-color: #E5D1D0;
+  background-color: #5D576B;
   top: 0;
   text-align: center;
   height: 110%;
@@ -256,15 +256,15 @@ body {
   width: 52.5rem;
   font-size: 5rem;
   position: relative;
-  color: rgb(255, 252, 255);
+  color: rgb(186, 186, 186);
 }
 
 #ageDisplay {
-  color: #5D576B;
+  color: #fff;
 }
 
 #compColor {
-  color: #5D576B;
+  color: #fff;
 }
 
 .nowrap {
@@ -274,7 +274,7 @@ body {
 #clockmain {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
-  background-color: #CCB3DD;
+  background-color: #424145;
   top: 0;
   height: 55rem;
   width: 100%;
@@ -362,7 +362,7 @@ div #city {
   position: relative;
   top: -5vh;
   margin-bottom: -5vh;
-  background: #E5D1D0;
+  background-color: #5D576B;
   overflow: hidden;
 }
 
@@ -375,7 +375,7 @@ div #city {
   font-size: 3rem;
   opacity: 0;
   width: 100%;
-  color: #5D576B;
+  color: rgb(223, 220, 233);
 }
 
 #hobbyTrans {
@@ -406,7 +406,7 @@ div #city {
   overflow: hidden;
   position: relative;
   height: 60rem;
-  background: #CCB3DD;
+  background: #424145;
   width: 100%;
   line-height: 3.5rem;
 }
@@ -427,7 +427,7 @@ div #city {
   font-weight: bold;
   position: relative;
   text-align: left;
-  color: #5C6D70;
+  color: #fff;
   opacity: 0;
   top: 30rem;
 }
@@ -436,9 +436,9 @@ div #city {
   position: absolute;
   display: inline-block;
   width: 100vw;
-  left: -12.8rem;
+  left: -19.8rem;
   font-size: 2.5rem;
-  color: #5C6D70;
+  color: #fff;
 }
 
 .mesCenter {
@@ -451,16 +451,16 @@ div #city {
   display: inline-block;
   font-size: 3.5rem;
   position: relative;
-  color: #424145;
+  color: #8D67A8;
 }
 
 .mesCol {
-  color: #5C6D70;
+  color: #fff;
 }
 
 .SNS {
   height: 20vh;
-  background: #424145;
+  background: rgb(93, 93, 97);
   overflow: hidden;
 }
 
