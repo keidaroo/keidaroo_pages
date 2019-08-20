@@ -240,7 +240,7 @@ body {
   overflow: hidden;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
-  background-color: #DA6272;
+  background-color: #E5D1D0;
   top: 0;
   text-align: center;
   height: 110%;
@@ -256,16 +256,15 @@ body {
   width: 52.5rem;
   font-size: 5rem;
   position: relative;
-  color: #ffffff;
+  color: rgb(255, 252, 255);
 }
 
 #ageDisplay {
-  color: #F9E3AA;
-  font-size: 6rem;
+  color: #5D576B;
 }
 
 #compColor {
-  color: #F9E3AA;
+  color: #5D576B;
 }
 
 .nowrap {
@@ -363,20 +362,20 @@ div #city {
   position: relative;
   top: -5vh;
   margin-bottom: -5vh;
-  background: #ECA086;
+  background: #E5D1D0;
   overflow: hidden;
 }
 
 #topicHobby {
   font-size: 3.5rem;
-  color: #D3537E;
+  color: rgb(152, 151, 151);
 }
 
 .listHobby {
-  font-size: 4rem;
+  font-size: 3rem;
   opacity: 0;
   width: 100%;
-  color: #ffffff;
+  color: #5D576B;
 }
 
 #hobbyTrans {
@@ -406,14 +405,14 @@ div #city {
 #contactMe {
   overflow: hidden;
   position: relative;
-  height: 50rem;
-  background: #45A1CF;
+  height: 60rem;
+  background: #CCB3DD;
   width: 100%;
   line-height: 3.5rem;
 }
 
 #messageIMG {
-  background: url("../pictures/letter.png");
+  background: url("../pictures/letter.svg");
   position: absolute;
   background-size: 20rem;
   top: 5rem;
@@ -428,7 +427,7 @@ div #city {
   font-weight: bold;
   position: relative;
   text-align: left;
-  color: #fff;
+  color: #5C6D70;
   opacity: 0;
   top: 30rem;
 }
@@ -437,9 +436,9 @@ div #city {
   position: absolute;
   display: inline-block;
   width: 100vw;
-  left: -25.8rem;
+  left: -12.8rem;
   font-size: 2.5rem;
-  color: #fff;
+  color: #5C6D70;
 }
 
 .mesCenter {
@@ -450,14 +449,13 @@ div #city {
 .mailAdd {
   position: absolute;
   display: inline-block;
-  left: -8.5rem;
   font-size: 3.5rem;
   position: relative;
-  color: #fad688;
+  color: #424145;
 }
 
 .mesCol {
-  color: #fff;
+  color: #5C6D70;
 }
 
 .SNS {
