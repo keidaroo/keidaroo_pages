@@ -40,7 +40,7 @@ hr {
 }
 
 .bluePlay {
-  background-image: url("../../pictures/2.png");
+  background-image: url("../../pictures/ch.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -66,16 +66,86 @@ hr {
 }
 
 .ruleImg {
-  background-image: url("../../pictures/UI2.png");
+  background-image: url("../../pictures/0x0ss-P3.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.underdevelop {
-  background-image: url("../../pictures/chara.png");
+.appstore {
+  background-image: url("../../pictures/appstore.png");
   background-repeat: no-repeat;
-  left: 3%;
-  background-size: 100%;
+  background-size: 50%;
+  left: 25%;
+}
+
+.play {
+  background-image: url("../../pictures/play.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 5%;
+}
+
+.firstI {
+  background-image: url("../../pictures/first.jpeg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.secI {
+  background-image: url("../../pictures/second.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.lasI {
+  background-image: url("../../pictures/last.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.scoreChaI {
+  background-image: url("../../pictures/scoreCha.jpeg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.scoreIceI {
+  background-image: url("../../pictures/scoreIce.jpeg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.stageDesignI {
+  background-image: url("../../pictures/stageDesign.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.skyI {
+  background-image: url("../../pictures/character-\(1\).png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.iconI {
+  background-image: url("../../pictures/icon3.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.underdevelop {
+  background-image: url("../../pictures/character-\(1\)-[].png");
+  background-repeat: no-repeat;
+  left: 25%;
+  background-size: 50%;
 }
 
 .blog2 {
@@ -86,6 +156,10 @@ hr {
 .blog3 {
   background-image: url("img/blog3.jpeg");
   background-repeat: no-repeat;
+}
+
+.description {
+  font-size: 1.2rem;
 }
 
 .blog4 {
