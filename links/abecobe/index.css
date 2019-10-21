@@ -114,14 +114,25 @@ hr {
 }
 
 .scoreIceI {
-  background-image: url("../../pictures/scoreIce.jpeg");
+  /* background-image: url("../../pictures/scoreIce.jpeg"); */
   background-repeat: no-repeat;
   background-size: 50%;
   left: 25%;
 }
 
+.autoImg {
+  width: 25%;
+}
+
 .stageDesignI {
   background-image: url("../../pictures/stageDesign.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  left: 25%;
+}
+
+.titleI {
+  background-image: url("../../pictures/title.jpeg");
   background-repeat: no-repeat;
   background-size: 50%;
   left: 25%;
