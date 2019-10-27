@@ -75,21 +75,21 @@ hr {
   background-image: url("../../pictures/appstore.png");
   background-repeat: no-repeat;
   background-size: 50%;
+  top: 0.5rem;
   left: 25%;
 }
 
 .play {
-  background-image: url("../../pictures/play.png");
+  background-image: url("../../pictures/google-play-badge.png");
   background-repeat: no-repeat;
-  background-size: 50%;
-  left: 5%;
+  background-size: 60%;
+  text-align: center;
 }
 
 .firstI {
   background-image: url("../../pictures/first.jpeg");
   background-repeat: no-repeat;
   background-size: 50%;
-  left: 25%;
 }
 
 .secI {
